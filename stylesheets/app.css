@@ -1,0 +1,108 @@
+body {
+    font: 12px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: rgb(100, 100, 100);
+    padding: 5px;
+}
+
+#slideshow {
+    position: relative;
+    width: 942px;
+    height: 622px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.25);
+}
+
+#slideshow a:link, #slideshow a:visited { color: #333; }
+#slideshow a:hover, #slideshow a:active { color: #999; }
+
+#slideshow li:first-child { display: block; }
+
+#slideshow li {
+    width: 658px;
+    height: 329px;
+    display: none;
+
+}
+
+#slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#slideshow .content {
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    padding: 15px;
+    padding-right: 120px;
+    width: 523px;
+}
+
+#slideshow .content .btn-more {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(0, 0, 200, 0.25);
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 3px 6px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+#slideshow .content .btn-more:hover {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+#slideshow .content h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#slideshow .content p {
+    margin: 0;
+}
+
+#slideshow .pager {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 30;
+}
+
+#slideshow .pager a {
+    line-height: 1em;
+    text-decoration: none;
+    float: left;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-right: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    border: 0 solid transparent;
+}
+
+#slideshow .pager a:hover, #slideshow .pager a:active {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+#slideshow .pager a:last-child {
+    margin: 0;
+}
+
+#slideshow .pager a.activeSlide {
+    background: rgba(0, 0, 25, 0.25);
+    color: #fff;
+}
