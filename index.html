@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheets/app.css" rel="stylesheet">
     <script src="javascripts/app.js"></script>
+
 </head>
 <body>
   <header role="banner">
@@ -39,9 +40,9 @@
 
   </header>
 
-  <article>
+  <article itemscope itemtype="http://data-vocabulary.org/LocalBusiness">
     <h2>Cederberg Story</h2>
-    <p>Cederberg Tea House, named after the region in the world where Rooibos Tea naturally grows, began as a mother-daughter catering company. After catering Natasha’s own wedding, we realized how much joy it would give us to bring the art of tea and the beauty of our country to the Seattle area, so we started catering and sharing our passion for tea and South African treats. We have now opened a brick and mortar location in Upper Queen Anne. Come and have a cup of tea and try some of our South African specialties.</p>
+    <p><span itemprop="Name">Cederberg Tea House,</span> <span itemprop="description">named after the region in the world where Rooibos Tea naturally grows, began as a mother-daughter catering company. After catering Natasha’s own wedding, we realized how much joy it would give us to bring the art of tea and the beauty of our country to the Seattle area, so we started catering and sharing our passion for tea and South African treats.</span> <span itemprop="address">We have now opened a brick and mortar location in Upper Queen Anne.</span> Come and have a cup of tea and try some of our South African specialties.</p>
     <p>For the love of tea,</p>
     <p>Cecile and Natasha</p>
   </article>
@@ -57,5 +58,22 @@
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </blockquote>
   </aside>
+
+  <footer>
+    <div itemscope itemtype="http://schema.org/LocalBusiness">
+      <a itemprop="url" href="http://cederbergteahouse.com/"><div itemprop="name"><strong>Cederberg Tea</strong></div>
+      </a>
+    <div itemprop="description">Cederberg Tea House specializes in South African tea, baked goods and coffee. As South Africans, we have a rich culture of food and drink, not readily available in the United States...Rooibos Espresso, Koeksisters (South African syrup soaked doughnut), Melk Tert (South African custard tart) and many more unique and delightful South African treats. </div>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">1417 Queen Anne Ave N</span><br>
+    <span itemprop="addressLocality">Seattle</span><br>
+    <span itemprop="addressRegion">WA</span><br>
+    <span itemprop="postalCode">98109</span><br>
+    <span itemprop="addressCountry">USA</span><br>
+    </div>
+    </div>
+
+  </footer>
+
 </body>
 </html>
